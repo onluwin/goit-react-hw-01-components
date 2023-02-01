@@ -14,7 +14,6 @@ import transactions from './TransactionHistory/data/transactions'
 
 const { username, tag, location , avatar, stats } = userData;
 
-
 export const App = () => {
   return (
     <>
@@ -36,27 +35,7 @@ export const App = () => {
   )
 };
 
-Profile.propTypes = {
-  name: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  avatar: PropTypes.string.isRequired,
-  stats: PropTypes.shape({
-
-    followers: PropTypes.number.isRequired,
-    views: PropTypes.number.isRequired,
-    likes: PropTypes.number.isRequired
-  }).isRequired
-}
-
-Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
-  data: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
-    percentage: PropTypes.number.isRequired,
-  }).isRequired).isRequired
-}
+// ОСТАЛОСЬ ДОПИСАТЬ PROP TYPES ДЛЯ СЛЕДУЮЩИХ КОМПОНЕНТОВ:
 
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(PropTypes.shape({
