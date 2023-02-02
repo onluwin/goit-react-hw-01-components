@@ -16,14 +16,12 @@
   font-weight: 700;
 }
 
-.tableBody {
-}
-
 .tableRow {
   height: 40px;
   font-size: 18px;
   font-weight: 500;
 }
+
 .tableRow:nth-child(even) {
   background-color: rgb(167, 167, 167);
   color: #fff;
